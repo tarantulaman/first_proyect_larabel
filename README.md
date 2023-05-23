@@ -431,3 +431,33 @@ composer install
 ```
 npm install
 ```
+
+
+3. Este comando permite arrancar el servidor de Node automaticamente, en modo desarrollo usando Nodemon, con esto ya podremos visualizar correctamente Bootsatrap en nuestra aplicacion, en algunos casos es necesario ejecutarlo hasta 2 veces
+
+```
+npm run dev
+```
+
+* *Si se ha ejecutado el comando correctamente debera mostrarnos el siguiente mensaje*
+
+
+```
+✔ Compiled Successfully in 7678ms
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬──────────┐
+│                                                                                                                     File │ Size     │
+├──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┼──────────┤
+│                                                                                                               /js/app.js │ 2.22 MiB │
+│                                                                                                              css/app.css │ 230 KiB  │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┴──────────┘
+webpack compiled successfully
+```
+
+
+4. Generamos la llave de seguridad mediante Artisan
+
+```
+php artisan key:generate
+```
+
+
