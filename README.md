@@ -418,3 +418,16 @@ sudo systemctl restart apache2
 
 
 #### COMANDOS PARA EJECUTAR UN PROYECTO DESCARGADO DE GITHUB
+
+
+1. Instalamos todos los paquetes de Composer
+
+```
+composer install
+```
+
+2. Instalamos todos los paquetes de Node, es importante ejecutar estos comandos de node para que nuestra aplicacion se empaquete correctamente
+
+```
+npm install
+```
