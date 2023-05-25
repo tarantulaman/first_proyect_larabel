@@ -466,7 +466,10 @@ php artisan key:generate
 php artisan storage:link
 ```
 
-6. Si estamos en sistemas opertivos GNU-Linux/Ubuntu y estamos usando Apache y PHP instado por consola, damos el siguiente permiso, despues de haber creado el proyecto para evitar que despues nos muestre errores de permiso, si estamos en Windows no seguimos este paso
+6. Renombramos el archivo .env.example a .env y actualizamos las credenciales de la base de datos, esto se encuentra en la sección de [IMPORTANTE](#IMPORTANTE), en el punto 8.
+
+
+7. Si estamos en sistemas opertivos GNU-Linux/Ubuntu y estamos usando Apache y PHP instado por consola, damos el siguiente permiso, despues de haber creado el proyecto para evitar que despues nos muestre errores de permiso, si estamos en Windows no seguimos este paso
 
 ```
 sudo chmod 777 -R /var/www/html/
