@@ -92,6 +92,16 @@ https://laravel.com/docs/9.x/migrations#available-column-types
 https://laravel.com/docs/9.x/migrations#available-column-types
 
 
+8. Credenciales de la base de datos
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=sistema
+DB_USERNAME=root
+DB_PASSWORD=root
+
+
 *En el caso que exista dudas sobre el proyecto ver el siguiente tutorial: [CRUD en Laravel 8  - #1](https://youtu.be/FwAI2-cotLI)*
 
 ---
