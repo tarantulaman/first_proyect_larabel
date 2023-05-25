@@ -472,4 +472,9 @@ php artisan storage:link
 sudo chmod 777 -R /var/www/html/
 ```
 
+* *Una vez creado el proyecto, podremos visualizar su pagina de inicio
+   abriendo la siguiente ruta en el navegador*
+   
+http://localhost/sistema/public/
+
 
