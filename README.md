@@ -433,7 +433,7 @@ npm install
 ```
 
 
-3. Este comando permite arrancar el servidor de Node automaticamente, en modo desarrollo usando Nodemon, con esto ya podremos visualizar correctamente Bootsatrap en nuestra aplicacion, en algunos casos es necesario ejecutarlo hasta 2 veces
+3. Arrancamos el servidor de Node automaticamente, en modo desarrollo usando Nodemon, con esto ya podremos visualizar correctamente Bootsatrap en nuestra aplicacion, en algunos casos es necesario ejecutarlo hasta 2 veces
 
 ```
 npm run dev
@@ -458,6 +458,18 @@ webpack compiled successfully
 
 ```
 php artisan key:generate
+```
+
+5. Si nuestro proyecto va a cargar imagenes, es nesesario ejecutar el siguiente comando que permite hacer publico los archivos de la ruta "storage/app/public", con la finalidad de recuperrar los archivos que vayamos subiendo en esta ruta, es decir este comando habilita el directorio "public/storage/uploads", donde se podran recuperar los archivos, crea como una carpeta espejo de "storage/app/public"
+
+```
+php artisan storage:link
+```
+
+6. Si estamos en sistemas opertivos GNU-Linux/Ubuntu y estamos usando Apache y PHP instado por consola, damos el siguiente permiso, despues de haber creado el proyecto para evitar que despues nos muestre errores de permiso, si estamos en Windows no seguimos este paso
+
+```
+sudo chmod 777 -R /var/www/html/
 ```
 
 
