@@ -454,19 +454,21 @@ webpack compiled successfully
 ```
 
 
-4. Generamos la llave de seguridad mediante Artisan
-
-```
-php artisan key:generate
-```
-
-5. Si nuestro proyecto va a cargar imagenes, es nesesario ejecutar el siguiente comando que permite hacer publico los archivos de la ruta "storage/app/public", con la finalidad de recuperrar los archivos que vayamos subiendo en esta ruta, es decir este comando habilita el directorio "public/storage/uploads", donde se podran recuperar los archivos, crea como una carpeta espejo de "storage/app/public"
+4. Si nuestro proyecto va a cargar imagenes, es nesesario ejecutar el siguiente comando que permite hacer publico los archivos de la ruta "storage/app/public", con la finalidad de recuperrar los archivos que vayamos subiendo en esta ruta, es decir este comando habilita el directorio "public/storage/uploads", donde se podran recuperar los archivos, crea como una carpeta espejo de "storage/app/public"
 
 ```
 php artisan storage:link
 ```
 
-6. Renombramos el archivo .env.example a .env y actualizamos las credenciales de la base de datos, esto se encuentra en la sección de [IMPORTANTE](#IMPORTANTE), en el punto 8.
+5. Renombramos el archivo .env.example a .env y actualizamos las credenciales de la base de datos, esto se encuentra en la sección de [IMPORTANTE](#IMPORTANTE), en el punto 8.
+
+
+
+6. Generamos la llave de seguridad de nuestra base de datos mediante Artisan
+
+```
+php artisan key:generate
+```
 
 
 7. Si estamos en sistemas opertivos GNU-Linux/Ubuntu y estamos usando Apache y PHP instado por consola, damos el siguiente permiso, despues de haber creado el proyecto para evitar que despues nos muestre errores de permiso, si estamos en Windows no seguimos este paso
