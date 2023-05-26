@@ -495,6 +495,14 @@ php artisan migrate
 ```
 
 
+9. Es importante ir al archivo **routes/web.php**, y modificar el codigo **Auth::routes(['register'=>false,'reset'=>false]);**, por el siguiente, con la finalidad de
+   activar la opcion de crear un usuario y comenzar a usar la aplicacion
+   
+```
+Auth::routes();
+```
+
+
 9. Si estamos en sistemas opertivos GNU-Linux/Ubuntu y estamos usando Apache y PHP instado por consola, damos el siguiente permiso, despues de haber creado el proyecto para evitar que despues nos muestre errores de permiso, si estamos en Windows no seguimos este paso
 
 ```
