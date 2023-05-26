@@ -482,8 +482,20 @@ php artisan storage:link
 php artisan key:generate
 ```
 
+7. Creamos la base de datos, con el nombre que se encuentra en la sección de [IMPORTANTE](#IMPORTANTE), en el punto 8.
 
-7. Si estamos en sistemas opertivos GNU-Linux/Ubuntu y estamos usando Apache y PHP instado por consola, damos el siguiente permiso, despues de haber creado el proyecto para evitar que despues nos muestre errores de permiso, si estamos en Windows no seguimos este paso
+```
+DB_DATABASE=sistema
+```
+
+8. Creamos las migraciones en nuestra base de datos, es decir que se van a crear las tablas en nuestra base de datos, de acuerdo al archivo que hayamos creado en la carpeta database/migrations
+
+```
+php artisan migrate
+```
+
+
+9. Si estamos en sistemas opertivos GNU-Linux/Ubuntu y estamos usando Apache y PHP instado por consola, damos el siguiente permiso, despues de haber creado el proyecto para evitar que despues nos muestre errores de permiso, si estamos en Windows no seguimos este paso
 
 ```
 sudo chmod 777 -R /var/www/html/
