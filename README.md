@@ -503,7 +503,7 @@ Auth::routes();
 ```
 
 
-9. Si estamos en sistemas opertivos GNU-Linux/Ubuntu y estamos usando Apache y PHP instado por consola, damos el siguiente permiso, despues de haber creado el proyecto para evitar que despues nos muestre errores de permiso, si estamos en Windows no seguimos este paso
+10. Si estamos en sistemas opertivos GNU-Linux/Ubuntu y estamos usando Apache y PHP instado por consola, damos el siguiente permiso, despues de haber creado el proyecto para evitar que despues nos muestre errores de permiso, si estamos en Windows no seguimos este paso
 
 ```
 sudo chmod 777 -R /var/www/html/
@@ -513,5 +513,12 @@ sudo chmod 777 -R /var/www/html/
    abriendo la siguiente ruta en el navegador*
    
 http://localhost/sistema/public/
+
+
+11. Cuando subimos el proyecto a GitHub se eliminan las imagenes si nuestro proyecto tiene esa funcionalidad, por eso para hacer pruebas podemos descargar las imagenes desde estos enlaces
+
+https://postimg.cc/K4bHSnLy
+
+https://postimg.cc/dD9SqLmZ
 
 
